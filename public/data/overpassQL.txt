@@ -1,0 +1,45 @@
+[timeout:25]
+[out:json]
+;
+(
+  nwr
+    ["shop"="bakery"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["shop"="supermarket"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["shop"="chemist"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["amenity"="cinema"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["sport"="swimming"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["amenity"="pharmacy"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["amenity"="ice_cream"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["amenity"="school"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["amenity"="college"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["amenity"="kindergarten"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["leisure"="park"]
+    (around:<RANGE>,<LAT>,<LON>);
+  nwr
+    ["leisure"="playground"]
+    ["access"!="private"]
+    (around:<RANGE>,<LAT>,<LON>);
+);
+out center;
+>;
+out skel qt;
